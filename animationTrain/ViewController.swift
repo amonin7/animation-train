@@ -35,7 +35,7 @@ class ViewController: UIViewController {
                 self.nicknameLabel.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
                 self.nicknameLabel.textColor = .green
             } else {
-                self.nicknameLabel.transform = CGAffineTransform(scaleX: 1 / 1.1, y: 1 / 1.1)
+                self.nicknameLabel.transform = CGAffineTransform(scaleX: 1, y: 1)
                 self.nicknameLabel.textColor = .black
             }
         })
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         }, completion: nil)
         
         UIView.animate(withDuration: 0.25, delay: 0.25, options: [], animations: {
-            self.sendButton.transform = CGAffineTransform(scaleX: 1 / 1.15, y: 1 / 1.15)
+            self.sendButton.transform = CGAffineTransform(scaleX: 1, y: 1)
         }, completion: nil)
     }
     
